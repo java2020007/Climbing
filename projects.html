@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교통편</title>
+        <style>
+        .outline_content {
+          border-left: 7px solid green;
+          background-color: white;
+        }
+        
+        ul{
+           list-style:none;
+           padding-left:15px;
+       }
+    </style>
+    <style>
+        * {
+          box-sizing: border-box;
+          
+    }
+
+    body {
+          margin: 0;
+          
+    }
+
+/* 탑 네비게이션 바 스타일 */
+    .topnav {
+          overflow: hidden;
+          background-color: #333;
+    }
+
+/* 탑메뉴 링크 스타일 */
+    .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+    }    
+
+/* 호버시 색상 변경 */
+    .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+    }
+
+/* 콘텐츠 스타일 */
+    .content {
+          
+          background-color: #fff;
+          padding: 15px;
+          
+}
+
+/* 푸트 스타일 */
+    .footer {
+          background-color: #f1f1f1;
+          padding: 10px;
+    }
+
+/* 헤더 스타일 */
+    .header {
+          background-color: white;
+          padding: 0px;       
+          margin: 0px;
+}
+    </style>
+
+  </head>
+    <!--
+    2. 설치 스크립트
+	    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+    -->
+    
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <body>
+    <!-- 네비게이션 메뉴는 여기에 -->
+    <div class="topnav">
+        <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="place.html">장소</a></li>
+            <li><a href="projects.html">교통편</a></li>
+            <li><a href="social.html">등산 코스</a></li>
+            <li><a href="utube.html">유튜브 동영상</a></li>
+            <li><a href="pictures.html">사진 갤러리</a></li>          
+        </ul>
+    </div>
+    <h1>교통편</h1>
+
+      <h3>수리산 대중교통 안내입니다.</h3>
+    
+    <ol>
+        <li><b>8906 광역버스</b></li><br>
+        <ul>
+            <li><b>버스하차 정류장</b> : 안양 시외버스터미널 정류장</li>
+            
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1577861839104" class="root_daum_roughmap root_daum_roughmap_landing">
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1577861839104",
+                "key" : "wg5k",
+                "mapWidth" : "720",
+                "mapHeight" : "480"
+            }).render();
+            </script>
+             
+            <p>안양 시외버스터미널.교보생명 정류장에서 하차합니다. 여기서 도보 또는 일반버스 10, 11-3, 15, 15-2, 52번을 이용해서 병목안 시민공원까지 갑니다.</p>             
+            </div>          
+            <br>
+            
+            <li><b>들머리</b> : 안양 병목안 시민공원</li>
+            
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1577855592011" class="root_daum_roughmap root_daum_roughmap_landing">
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1577855592011",
+                    "key" : "wg5b",
+                    "mapWidth" : "720",
+                    "mapHeight" : "480"
+                }).render();
+            </script>
+            <p>들머리: 안양 병목안 시민공원에서 부터 등산을 시작합니다.</p>
+            </div>
+            <br>
+
+
+            <li><b>날머리</b> : 원점회귀</li>
+            <br>
+            <li><b>송내역에서 버스로 수리산까지 가는 방법</b></li>
+            <p><image src="images/path1.png" alt="송내역에서 버스로 수리산 가는 방법(버스)" width="720"></image>
+            </p>
+            
+            
+        </ul>
+        <li><b>지하철</b></li><br>
+        <ul>
+            <li><b>전철을 이용해서 수리산에 가는 방법</b></li><br>
+            <p><image src="images/path2.png" alt="송내역에서 버스로 수리산 가는 방법(전철)" width="720"></image>
+            </p>
+
+            
+        </ul>
+    </ol>
+        
+  </body>
+</html>
+
+
+
+
